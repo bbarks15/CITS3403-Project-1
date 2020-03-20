@@ -1,0 +1,69 @@
+body {
+  font-family: "Roboto", monospace;
+  font-size: 14pt;
+}
+
+p {
+  text-align: justify;
+}
+
+b {
+  color: firebrick;
+  font-weight: 2000;
+}
+
+#nav_title {
+  font-size: 22pt;
+  font-weight: 1;
+}
+
+.navbar a {
+  font-size: 16pt;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#html_logo {
+  width: 7cm;
+  margin-top: 0cm;
+}
+
+#home_html {
+  background: url("../assets/desk.jpg") no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding: 10cm;
+  margin-bottom: 2cm;
+  color: black;
+}
+
+#home_css {
+  background: url("../assets/surf_book.jpg") no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding: 10cm;
+  margin-bottom: 2cm;
+  color: black;
+}
+
+#home_js {
+  background: url("../assets/buildings.jpg") no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  padding: 10cm;
+  margin-bottom: 2cm;
+  color: black;
+}
+
+#berners_lee {
+  width: 6cm;
+}
