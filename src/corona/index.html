@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="corona.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Corona Virus Statistics</title>
+</head>
+
+<body>
+    <h1 class="display-1">Corona Virus</h1>
+
+    <div class="container-fluid">
+        <label for="table_filter">Country </label>
+        <input type="text" id="table_filter" placeholder="Search..." class="form-control">
+    </div>
+
+    <div id="table_div" class="container-fluid">
+        <div class="col justify-content-center">
+        <table class="table table-bordered" id="table_here">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th onclick="sortTable(1)">Country</th>
+                    <th onclick="sortTable(2)">Confirmed</th>
+                    <th onclick="sortTable(3)">Active</th>
+                    <th onclick="sortTable(4)">Recovered</th>
+                    <th onclick="sortTable(5)">Deaths</th>
+                    <th onclick="sortTable(6)">Today's Cases</th>
+                    <th onclick="sortTable(7)">Today's Deaths</th>
+                </tr>
+            </thead>
+        </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

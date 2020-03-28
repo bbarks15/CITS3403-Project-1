@@ -1,0 +1,61 @@
+---
+title: CITS3403 Project 1
+author: Brandon Barker
+date: 2020
+output: pdf_document
+papersize: a4
+---
+
+# HTML
+
+HTML (HyperText Markup Language) is the go to markup language for creating
+documents to be displayed in the web browser. Like other markup languages, it
+is a YAFIYGI (You Asked For It, You Got It) tool, in contrast to a WYSIWYG
+(What You See Is What You Get) tool like Microsoft's Word. The benefit of a
+YAFIYGI tool is the almost limitless control and possibilities that can be
+achieved. If you want to do something, chances are that it can be done in
+HTML. WYSIWYG tools often use a user interface. Although it can help remove
+the learning curve by an intuitive and simple ui, it also greatly lowers the
+ceiling on what can be achieved. This limits the potential of WYSIWYG tools,
+and is one of big reasons why a YAFIYGI tool like HTML is still so prevalent
+in the development of webpages today.
+
+Sir Tim Berners-Lee created HTML as an internet hypertext based system in
+late 1990. HTML is a product of SGML (Standard Generalized Markup Language)
+which is a very complex, technical specification describing markup language.
+SGML was used to publish and exchange scientific and technical documents.
+HTML was created as an easier alternative to SGML. It would allow those who
+were not proficient in SGML to publish and exchange documents. One of the big
+features of HTML was the ability to hyperlink documents. This feature gave
+HTML its name, Hypertext Markup Language. HTML was officially published many
+years later in 1995 as HTML 2.0.
+
+HTML consists of tags denoted by the less-than and greater-than signs and has
+evolved greatly over the last few decades. Each tag consists of a start tag
+`<TAG>` and an end tag `</TAG>`. There are approximately 110 tags in the
+current HTML standard, HTML5. However, when HTML was first released, there
+were only 18 tags. Many of the current tags used today were not implemented in
+the original HTMl. Here is a list of the original tags in HTML 1 [tag  history](http://www.martinrinehart.com/frontend-engineering/engineers/html/html-tag-history.html)
+
+- `<A>`
+- `<ADDRESS>`
+- `Base Address`
+- `<DD>`
+- `<DIR>`
+- `<DL>`
+- `<DT>`
+- `<H1>, ...<H6>`
+- `<HP1>, ...<HP2>`
+- `<ISINDEX>`
+- `<LI>`
+- `<LISTING>`
+- `<MENU>`
+- `<NEXTID>`
+- `<P>`
+- `<PLAINTEXT> 	`
+- `<TITLE>`
+- `<UL>`
+
+
+# CSS
+
