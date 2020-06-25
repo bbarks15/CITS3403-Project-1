@@ -1,0 +1,129 @@
+/* =================== ID ====================*/
+#header_js {
+    background: #fde634;
+}
+
+#table_div {
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: auto;
+    font-size: 11pt;
+}
+
+#table_filter {
+    margin-bottom: 0.5cm;
+}
+
+/* ==================== TIMELINE ================= */
+
+#timeline {
+    width: 100%;
+    height: 20%;
+}
+
+#line {
+    height: 6px;
+    width: 90%;
+    background: #fde634;
+    border-radius: 5px;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#date {
+    display: none;
+    width: 70%;
+    margin: 25% auto auto;
+    text-align: center;
+    color: black;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background: #fde634;
+    border-radius: 15px;
+    position: absolute;
+    top: -7px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.circle:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    border-radius: 100%;
+    top: 2px;
+    left: 2px;
+    display: none;
+}
+
+.circle .popupSpan {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 11pt;
+    position: absolute;
+    top: 20px;
+    left: -75px;
+    display: none;
+    transition: all 0.1s ease-out;
+    color: black;
+}
+
+.circle.hover:before, .circle.active:before {
+    display: block;
+}
+
+.circle.hover .popupSpan, .circle.active .popupSpan {
+    display: block;
+}
+
+.circle.active .popupSpan {
+    top: -40px;
+}
+
+#content {
+    height: max-content;
+    width: 100%;
+    position: relative;
+    transition: all 0.2s ease-out;
+
+}
+
+#content span {
+    display: inline-block;
+    padding-top: 1cm;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    transition: all 0.2s ease-out;
+}
+
+
+#content span.show {
+    position: static;
+}
+
+#content span.hidden {
+    display: none;
+}
+
+
+#ajax_diagram {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0.5cm;
+    padding-bottom: 1cm;
+}

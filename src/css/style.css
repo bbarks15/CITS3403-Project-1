@@ -1,69 +1,189 @@
+/* ===================== Elements ==========================*/
 body {
-  font-family: "Roboto", monospace;
-  font-size: 14pt;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14pt;
+    overflow-y: scroll;
 }
 
 p {
-  text-align: justify;
+    text-align: justify;
 }
 
-b {
-  color: firebrick;
-  font-weight: 2000;
+blockquote {
+    display: block;
+    font-size: 12pt;
+    font-style: italic;
+    justify-content: center;
+    margin-left: 1cm;
+    margin-right: 1cm;
 }
 
-#nav_title {
-  font-size: 22pt;
-  font-weight: 1;
+header li {
+    font-size: 14pt;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.navbar a {
-  font-size: 16pt;
-  margin-left: 1em;
-  margin-right: 1em;
+header {
+    margin-bottom: 2cm;
 }
 
-#html_logo {
-  width: 7cm;
-  margin-top: 0cm;
+pre {
+    background: white;
+    border-radius: 5px;
+    display: block;
 }
 
-#home_html {
-  background: url("../assets/desk.jpg") no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  padding: 10cm;
-  margin-bottom: 2cm;
-  color: black;
+code {
+    font-family: "Fira Code", monospace;
 }
 
-#home_css {
-  background: url("../assets/surf_book.jpg") no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  padding: 10cm;
-  margin-bottom: 2cm;
-  color: black;
+/*================= Scroll Bar ======================*/
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 8px;
 }
 
-#home_js {
-  background: url("../assets/buildings.jpg") no-repeat center center fixed;
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  padding: 10cm;
-  margin-bottom: 2cm;
-  color: black;
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px gray;
 }
 
-#berners_lee {
-  width: 6cm;
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #818182;
+    border-radius: 10px;
 }
+
+/*Remove Scrollbar in the body*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/*====================Classes======================*/
+.header_area .main-menu .navbar {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.navbar-brand {
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+
+.header_logo {
+    font-size: 196pt;
+}
+
+.body_row {
+    padding-bottom: 1cm;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.col-list {
+    height: 6cm;
+    overflow-y: scroll;
+    padding-left: 10%;
+}
+
+.col-list li {
+    height: 1cm;
+    padding: 0.1cm;
+}
+
+.pageHeader {
+    font-size: 7vw;
+}
+
+.home-text {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.home {
+    
+    padding: 10% 5%;
+}
+
+.display-1, .display-2, .display-3, .display-4 {
+    padding-bottom: 0.5cm;
+}
+
+.body-container {
+    padding-bottom: 2cm;
+}
+
+.def-title {
+    padding-bottom: 1cm;
+}
+
+.list-version .list-group-item {
+    font-size: 18pt;
+    height: 2cm;
+    padding: 0.5cm;
+    text-align: center;
+    width: 80%;
+}
+
+.tab-pane {
+    padding-left: 10%;
+}
+
+.top_elements {
+    padding: 1.5cm 5%;
+}
+
+/* Override Dumb Google Prettify Styles*/
+.prettyprint ol.linenums > li {
+    list-style-type: decimal;
+}
+
+/* Override Dumb Google Prettify Styles*/
+pre.prettyprint {
+    padding: 15px;
+}
+
+/* Override Dumb Google Prettify Styles*/
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: white !important;
+}
+
+/*Style the example code*/
+.exampleCode {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+    width: 70%;
+}
+
+/* ==================== ID ========================*/
+
+#def-code {
+    padding: 0.5cm;
+}
+
+#whitewave {
+    width: 100%;
+}
+
+#list_code {
+    height: 9cm;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+#bottom_buffer {
+    margin-bottom: 2cm;
+    margin-top: 2cm;
+}
+
+
+
+

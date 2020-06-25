@@ -1,0 +1,29 @@
+/* ===================== Elements ==========================*/
+code {
+    color: #3399FF;
+}
+
+
+/* ===================== Classes ==========================*/
+.list-group-item.active {
+    color: #212529;
+    background-color: #3399FF;
+    border-color: #3399FF;
+}
+
+/* ===================== ID ==========================*/
+
+#header_css {
+    background: #3399FF;
+}
+
+#CSS_Logo_Text {
+    font-size: 32pt;
+}
+
+#CSS_TABLE {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-y: auto;
+}

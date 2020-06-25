@@ -1,0 +1,177 @@
+/* ======================= ID ========================*/
+#header_html {
+    background: #fdad5c;
+}
+
+#HTML_Logo_Text {
+    font-size: 32pt;
+}
+
+/* ========================== Classes =====================*/
+
+.list-group-item.active {
+    color: #212529;
+    background-color: #fdad5c;
+    border-color: #fdad5c;
+}
+
+/* ================= Elements ====================*/
+
+a {
+    /*color: #b31e6f;*/
+}
+
+/* ======= TIMELINE ===== */
+
+.main-timeline {
+    overflow: hidden;
+    position: relative
+}
+
+.main-timeline:after,
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both
+}
+
+.main-timeline:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #d6d5d5;
+    position: absolute;
+    top: 30px;
+    left: 50%
+}
+
+.main-timeline .timeline {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+    position: relative
+}
+
+.main-timeline .timeline-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #fe6847;
+    position: absolute;
+    top: 5.5%;
+    right: -17.5px
+}
+
+.main-timeline .year {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+    color: black;
+    border-radius: 0 50px 50px 0;
+    /*background: #fe6847;*/
+    background-color: #fdad5c;
+    text-align: center;
+    position: relative
+}
+
+.main-timeline .year:before {
+    content: "";
+    border-top: 35px solid #fdad5c;
+    border-left: 35px solid transparent;
+    position: absolute;
+    bottom: -35px;
+    left: 0
+}
+
+.main-timeline .timeline-content {
+    padding: 30px 20px;
+    margin: 0 45px 0 35px;
+    background: #f2f2f2
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #504f54;
+    margin: 0 0 10px
+}
+
+.main-timeline .description {
+    font-size: 11pt;
+    color: #7d7b7b;
+    margin: 0
+}
+
+.main-timeline .description ul li{
+    font-size: 11pt;
+    color: #7d7b7b;
+    margin: 0
+}
+
+.main-timeline .timeline:nth-child(2n) {
+    padding: 0 0 0 30px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-icon {
+    right: auto;
+    left: -14.5px
+}
+
+.main-timeline .timeline:nth-child(2n) .year {
+    border-radius: 50px 0 0 50px;
+    background: #fdad5c;
+}
+
+.main-timeline .timeline:nth-child(2n) .year:before {
+    border-left: none;
+    border-right: 35px solid transparent;
+    left: auto;
+    right: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    text-align: left;
+    margin: 0 35px 0 45px
+}
+
+.main-timeline .timeline:nth-child(2) {
+    margin-top: 170px
+}
+
+.main-timeline .timeline:nth-child(odd) {
+    margin: -175px 0 0
+}
+
+.main-timeline .timeline:nth-child(even) {
+    margin-bottom: 80px
+}
+
+.main-timeline .timeline:first-child,
+.main-timeline .timeline:last-child:nth-child(even) {
+    margin: 0
+}
+.main-timeline .timeline .year {
+    background: #fdad5c;
+}
+
+.main-timeline .timeline .year:before {
+    border-top-color: #fdad5c;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-icon {
+    border-color: #7eda99
+}
+
+.main-timeline .timeline:nth-child(3n) .timeline-icon {
+    border-color: #8a5ec1
+}
+
+.main-timeline .timeline:nth-child(4n) .timeline-icon {
+    border-color: #f98d9c
+}
+
+
+

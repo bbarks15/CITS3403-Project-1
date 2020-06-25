@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/html.css">
+
+    <!-- Fonts From Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+          rel="stylesheet">
+
+    <!--    Code Prettyify-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"/>
+
+    <title>HTML</title>
+</head>
+
+<body>
+<!-- ========================== Header ========================== -->
+
+<!-- Navbar -->
+<header id="header_html" class="header_area">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand">CITS3403 Projecet 1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-item nav-link active" href="#"><i class="fab fa-html5"></i> HTML<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="css.html"><i class="fab fa-css3-alt"></i> CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="javascript.html"><i class="fab fa-js"></i> JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="biography.html"><i class="fas fa-address-book"></i> Biography</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Title and Logo -->
+    <div class="container-fluid home">
+        <div class="row home-text">
+            <div class="col col-7">
+                <h1 class="pageHeader">HTML</h1>
+                <h3 id="HTML_Logo_Text">Hypertext Markup Language</h3>
+            </div>
+            <div class="col text-center">
+                <i class="fab fa-html5 header_logo"></i>
+            </div>
+        </div>
+    </div>
+    <img src="assets/white-waves.png" alt="white-waves" id="whitewave" class="img">
+</header>
+
+<!-- ========================== BODY TEXT ========================== -->
+<!-- History Section -->
+<div class="container-fluid body-container">
+    <div class="row body_row">
+        <h1 class="display-1">History</h1>
+        <p>
+            Sir Tim Berners-Lee created HTML as an internet hypertext
+            based system in late 1990 at CERN. HTML is a product of SGML
+            (Standard Generalized Markup Language) which is a very
+            complex, technical specification describing markup
+            language. SGML was used to publish and exchange
+            scientific and technical documents. HTML was created as
+            an easier alternative to SGML. It would allow those who
+            were not proficient in SGML to publish and exchange
+            documents. One of the big features of HTML was the
+            ability to hyperlink documents. This feature gave HTML
+            its name, Hypertext Markup Language. Reference
+            for information <a
+                href="https://www.ironspider.ca/webdesign101/htmlhistory.htm">
+            here</a>. HTML was evolved greatly of the years. Outlined in the timeline below
+            are the notable changes and information for each of the major HTML standards
+        </p>
+
+    </div>
+    <!-- Timeline -->
+    <div class="row body_row">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline">
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">Late 1990</span>
+                        <div class="timeline-content">
+                            <h3 class="title">HTML 1.0</h3>
+                            <ul class="description">
+                                <li> The first version of HTML supported
+                                    <ul>
+                                        <li>Inline images</li>
+                                        <li>Text Controls</li>
+                                    </ul>
+                                <li>HTML 1.0 was very limited in terms of styling and presentation of content. For
+                                    example you couldn't
+                                    <ul>
+                                        <li>Use tables, or frames,</li>
+                                        <li>Specify Fonts,</li>
+                                        <li>Change page background, or</li>
+                                        <li>Use forms</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">November 24, 1995</span>
+                        <div class="timeline-content">
+                            <h3 class="title">HTML 2.0</h3>
+                            <ul class="description">
+                                <li>HTML 2.0 introduced the general HTML document structure. Using the
+                                    <code>&lt;HTML&gt;</code>, <code>&lt;HEAD&gt;</code> and <code>&lt;BODY&gt;</code>
+                                </li>
+                                <li>Introduced Several Document Type Definitions <code>&lt;DOCTYPE&gt;</code></li>
+                                <li><b>November 1995</b> Proposed formed based file upload</li>
+                                <li><b>May 1996</b> Proposed markup for tables</li>
+                                <li><b>August 1996</b> Proposed client-side image maps</li>
+                                <li><b>January 1997</b> Added Support for Internationalization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">January 14,1997</span>
+                        <div class="timeline-content">
+                            <h3 class="title">HTML 3.2</h3>
+                            <ul class="description">
+                                <li>HTML 3.2 was published as a W3C recommendation.his was the first HTML
+                                    specification published by W3C after taking over responsibility for the
+                                    markup language.
+                                </li>
+                                <li>Dropped math formulas entirely</li>
+                                <li>Several features proposed as extensions to HTML 2.0 were incorporated
+                                    <ul>
+                                        <li>Standard markup for tables</li>
+                                        <li>Extension to the form feature to support uploading files</li>
+                                        <li>Support for client-side image maps</li>
+                                    </ul>
+                                <li><code>&lt;DIV&gt;</code> Tag was added</li>
+                                <li>Included "placeholder" elements <code>&lt;SCRIPT&gt;</code> and
+                                    <code>&lt;STYLE&gt;</code>, intended to facilitate transition to the next version of
+                                    HTML,
+                                </li>
+                                <li><b>January 1997</b> Added Support for Internationalization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">December 18, 1997</span>
+                        <div class="timeline-content">
+                            <h3 class="title">HTML 4.0</h3>
+                            <ul class="description">
+                                <li>Extending the document character set from ISO-8859-1 to ISO 10646
+                                    (equivalent to Unicode)
+                                </li>
+                                <li>Increased emphasis on use of external stylesheets via the <code>&lt;STYLE&gt;</code>
+                                    element.
+                                    Intended to phase out many of HTML's presentation elements and attributes.
+                                </li>
+                                <li>Increased emphasis on the use of scripts and the <code>&lt;SCRIPT&gt;</code> element
+                                    to allow authors to create dynamic Web pages and use HTML as a means to build
+                                    networked applications.
+                                </li>
+                                <li><code>&lt;TABLE&gt;</code> The model for tables was extended to serve several
+                                    objectives, including response to practical experience, support for accessibility,
+                                    and to simplify import of tables.
+                                </li>
+                                <li>The <code>&lt;OBJECT&gt;</code> element was introduced as a generalized approach for
+                                    inserting multimedia
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-icon"></span>
+                        <span class="year">October 28, 2014</span>
+                        <div class="timeline-content">
+                            <h3 class="title">HTML 5.0</h3>
+                            <ul class="description">
+                                <li> HTML 5 incorporated major changes and extensions over HTML 4.01.</li>
+                                <li> Several elements were added for more explicit representation of document structure,
+                                    including
+                                    <ul style="columns: 2;">
+                                        <li><code>&lt;section&gt;</code></li>
+                                        <li><code>&lt;main&gt;</code></li>
+                                        <li><code>&lt;article&gt;</code></li>
+                                        <li><code>&lt;aside&gt;</code></li>
+                                        <li><code>&lt;header&gt;</code></li>
+                                        <li><code>&lt;footer&gt;</code></li>
+                                        <li><code>&lt;figure&gt;</code></li>
+                                    </ul>
+                                <li>MathML and SVG markup can be used inside a document in the HTML serialization, using
+                                    <code>&lt;math&gt;</code> and <code>&lt;svg&gt;</code> elements.
+                                </li>
+                                <li>Flexible new elements were introduced for <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>
+                                    to avoid the need for format-specific plug-ins
+                                </li>
+                                <li>Added <code>&lt;canvas&gt;</code> element to provided scripts with a rectangular
+                                    area specified in pixels, to be used for rendering graphs, game graphics, or
+                                    bit-mapped art on the fly.
+                                </li>
+                                <li>Many detailed changes were introduced to provide more effective support for
+                                    interactivity, for example, to support editing within web pages, with features such
+                                    as drag-and-drop and spellchecking.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row body_row" style="padding-bottom: 0cm">
+        <p>HTML has evolved from a simple way of sharing documents, to a intricate staple in modern web development. HTML provides
+            the content of a webpage. Paired with the styling from CSS, and interactivity from Javascript it becomes a
+            very powerful tool for creation.</p>
+    </div>
+</div>
+
+<!-- Tags section -->
+<div class="container-fluid body-container">
+    <div class="row" style="margin-left: 15%">
+        <h1 class="display-1">Tags</h1>
+    </div>
+    <!-- Introduction to tags -->
+    <div class="row body_row">
+        <div class="col col-sm-6">
+            <p>
+                HTML consists of tags denoted by the less-than <code>&lt;</code> and greater-than
+                <code>&gt;</code> signs. These
+                tags are interpreted and composed by the web browser to create
+                text, images, and other material. Most tags consist of a start tag
+                <code>&lt;TAG&gt;</code> and an end tag
+                <code>&lt;/TAG&gt;</code>. There are approximately 110 tags in
+                the current HTML standard, HTML5. However, when HTML was first
+                released, there were only 18 tags. Many of the current tags used
+                today were not implemented in the original HTMl. A full list of
+                the tags and the standard they were introduced can be found <a
+                    href="http://www.martinrinehart.com/frontend-engineering/engineers/html/html-tag-history.html">
+                here</a>. Here is a list of the original tags in HTML 1
+            </p>
+        </div>
+        <!-- List of original html tags -->
+        <div class="col col-list">
+            <ul class="list-group text-center">
+                <li class="list-group-item"><code class="prettyprint">&lt;A&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;ADDRESS&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;Base Address&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;DD&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;DIR&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;DL&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;DT&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;H1&gt;,...,&lt;H6&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;HP1&gt;,...,&lt;HP2&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;ISINDEX&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;LI&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;LISTING&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;MENU&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;NEXTID&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;P&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;PLAINTEXT&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;TITLE&gt;</code></li>
+                <li class="list-group-item"><code class="prettyprint">&lt;UL&gt;</code></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Common HTML tags -->
+    <div class="row body_row">
+        <div class="col col-text">
+            <p>
+                <a href="https://www.codebrainer.com/blog/top-10-html-tags">CodeBrainer</a> did an analysis of the most
+                used HTML tags on popular websites. There analysis found that the link tag <code>&lt;a&gt;</code> was
+                the most used tag, representing
+                almost 25% of all tags on the web. There top 11 list and technical explanation of the tags is below, all
+                tag
+                info is obtained from <a href="https://www.w3schools.com/">w3schools</a>
+            </p>
+            <!-- List of common HTML tags with explanation -->
+            <div class="row top_elements">
+                <!-- List -->
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-a-list" data-toggle="list"
+                           href="#list-a"><code>&lt;a&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-b-list" data-toggle="list"
+                           href="#list-b"><code>&lt;b&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-body-list" data-toggle="list"
+                           href="#list-body"><code>&lt;body&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-br-list" data-toggle="list"
+                           href="#list-br"><code>&lt;br&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-div-list" data-toggle="list"
+                           href="#list-div"><code>&lt;div&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-h1-list" data-toggle="list"
+                           href="#list-h1"><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-list-list" data-toggle="list"
+                           href="#list-list"><code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-i-list" data-toggle="list"
+                           href="#list-i"><code>&lt;i&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-img-list" data-toggle="list"
+                           href="#list-img"><code>&lt;img&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-p-list" data-toggle="list"
+                           href="#list-p"><code>&lt;p&gt;</code></a>
+                        <a class="list-group-item list-group-item-action" id="list-span-list" data-toggle="list"
+                           href="#list-span"><code>&lt;span&gt;</code></a>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-a" role="tabpanel"
+                             aria-labelledby="list-a-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint">&lt;a href="destination"&gt;Visit URL&lt;/a&gt;</pre>
+                            <p>The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page
+                                to another.</p>
+                            <p>The most important attribute of the <code>&lt;a&gt;</code> element is the href attribute,
+                                which indicates the link's destination.</p>
+                            <p>An example of the <code>&lt;a&gt;</code> element is the CodeBrainer hyperlink above . The
+                                code for this is</p>
+                            <pre class="prettyprint">&lt;a href="https://www.codebrainer.com/blog/top-10-html-tags"&gt;CodeBrainer&lt;/a&gt;</pre>
+                        </div>
+                        <div class="tab-pane fade" id="list-b" role="tabpanel" aria-labelledby="list-b-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;b&gt;Text to bold&lt;/b&gt;</pre>
+                            <p>The <code>&lt;b&gt;</code> tag specifies bold text without any extra importance.</p>
+                            <p>An example of the <code>&lt;b&gt;</code> element is <b>Bolding this text</b>. </p>
+
+                            <p>The code for this is</p>
+                            <pre class="prettyprint">&lt;b&gt;Bolding this Text&lt;/b&gt;</pre>
+                        </div>
+                        <div class="tab-pane fade" id="list-body" role="tabpanel" aria-labelledby="list-body-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Title of the document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+The content of the document......
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+                            <p>The <code>&lt;body&gt;</code> tag defines the body of the document.</p>
+                            <p>The
+                                &lt;body&gt; element contains all the contents of an HTML document, such as text,
+                                hyperlinks,
+                                images, tables, lists, etc.
+                            </p>
+                            <p>For an example view the page source. Since it is too hard to show </p>
+                        </div>
+                        <div class="tab-pane fade" id="list-br" role="tabpanel" aria-labelledby="list-br-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;p&gt;To force&lt;br&gt; line breaks&lt;br&gt; in a text,&lt;br&gt; use the br&lt;br&gt; element.&lt;/p&gt;</pre>
+                            <p>The <code>&lt;br&gt;</code> tag inserts a single linebreak</p>
+                            <p>The <code>&lt;br&gt;</code> tag is an empty tag which means that it has no end tag. </p>
+                            <p>Example from above code</p>
+                            <p>To force<br> line breaks<br> in a text,<br> use the br<br> element.</p>
+                        </div>
+                        <div class="tab-pane fade" id="list-div" role="tabpanel" aria-labelledby="list-div-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;div style="background-color:lightblue"&gt;
+  &lt;h3&gt;This is a heading&lt;/h3&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/div&gt;</pre>
+                            <p>The <code>&lt;div&gt;</code> tag defines a division or a section in an HTML document</p>
+                            <p>The <code>&lt;div&gt;</code> element is often used as a container for other HTML elements
+                                to style them with CSS or to perform certain tasks with JavaScript.</p>
+                            <p>Example from above code</p>
+                            <div style="background-color:lightblue">
+                                <h3>This is a heading</h3>
+                                <p>This is a paragraph.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-h1" role="tabpanel" aria-labelledby="list-h1-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+&lt;h4&gt;This is heading 4&lt;/h4&gt;
+&lt;h5&gt;This is heading 5&lt;/h5&gt;
+&lt;h6&gt;This is heading 6&lt;h6&gt;</pre>
+                            <p>The <code>&lt;h1&gt;</code> to <code>&lt;h2&gt;</code> are used to define HTML headings
+                            </p>
+                            <p><code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code>
+                                defines the least important heading.</p>
+                            <p>Example from above code</p>
+                            <h1>This is heading 1</h1>
+                            <h2>This is heading 2</h2>
+                            <h3>This is heading 3</h3>
+                            <h4>This is heading 4</h4>
+                            <h5>This is heading 5</h5>
+                            <h6>This is heading 6</h6>
+                        </div>
+                        <div class="tab-pane fade" id="list-list" role="tabpanel" aria-labelledby="list-list-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;ul&gt;
+  &lt;li&gt;One&lt;/li&gt;
+  &lt;li&gt;Two&lt;/li&gt;
+  &lt;li&gt;Three&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                            <p>The <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> are used to define unordered and
+                                ordered lists respectively
+                            </p>
+                            <p>Use the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tag together with the <code>&lt;li&gt;</code>
+                                tag to create lists. </p>
+                            <p> Note that <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> have
+                                the same syntax</p>
+                            <p>Example from above code</p>
+                            <ul>
+                                <li>One</li>
+                                <li>Two</li>
+                                <li>Three</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="list-i" role="tabpanel" aria-labelledby="list-i-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;p&gt;He named his car &lt;i&gt;The lightning&lt;/i&gt;, because it was very fast.&lt;/p&gt;</pre>
+                            <p>The <code>&lt;i&gt;</code> tag defines a part of text in an alternate voice or mood. The
+                                content of the
+                                <code>&lt;i&gt;</code> tag is usually displayed in italic.
+                            </p>
+                            <p>Example from above code</p>
+                            <p>He named his car <i>The lightning</i>, because it was very fast.</p>
+                        </div>
+                        <div class="tab-pane fade" id="list-img" role="tabpanel" aria-labelledby="list-img-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;img src="meme.png" alt="meme" height="300" width="300"&gt;</pre>
+                            <p>The <code>&lt;i&gt;</code> tag defines an image in a HTML page.</p>
+                            <p>The <code>&lt;img&gt;</code> has two required attributes <code>arc</code> and
+                                <code>alt</code></p>
+                            <p>Example from above code</p>
+                            <img src="assets/meme.png" alt="meme" height="300" width="300">
+                        </div>
+                        <div class="tab-pane fade" id="list-p" role="tabpanel" aria-labelledby="list-p-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;p&gt;This is some text in a paragraph.&lt;/p&gt;</pre>
+                            <p>The <code>&lt;i&gt;</code> tag defines a paragraph</p>
+                            <p>Example from above code</p>
+                            <p>This is some text in a paragraph.</p>
+                        </div>
+                        <div class="tab-pane fade" id="list-span" role="tabpanel" aria-labelledby="list-span-list">
+                            <h1 class="display-4 def-title">Definition and Usage</h1>
+                            <pre class="prettyprint ">&lt;p&gt;I will make this &lt;span style="color:blue"&gt;text blue&lt;/span&gt;&lt;/p&gt;</pre>
+                            <p>The <code>&lt;span&gt;</code> tag is used to group inline-elements in a document</p>
+                            <p>the <code>&lt;span&gt;</code> provides no visual change but itself</p>
+                            <p>Example from above code</p>
+                            <p>I will make this <span style="color: blue">text blue</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buffer at bottom of page -->
+<div id="bottom_buffer"></div>
+</body>
+
+</html>
+
+
+

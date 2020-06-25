@@ -1,110 +1,325 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      in
-      tegrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      in
-      tegrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <title>CITS3403 Project 1</title>
-  </head>
+<html lang=en>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" id="nav_title">CITS3403 Project 1</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html"
-            ><i class="fab fa-html5"></i> HTML<span class="sr-only"
-              >(current)</span
-            ></a
-          >
-          <a class="nav-item nav-link" href="css.html"
-            ><i class="fab fa-css3-alt"></i> CSS</a
-          >
-          <a class="nav-item nav-link active" href="#"
-            ><i class="fab fa-js"></i> Javascript</a
-          >
-          <a class="nav-item nav-link" href="#"
-            ><i class="fas fa-address-book"></i> Biography</a
-          >
-        </div>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <div id="home_js">
-      <div class="text-center">
-        <h1 class="display-4"><i class="fab fa-js"></i> Javascript</h1>
-      </div>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/javascript.css">
+
+    <!-- Fonts From Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+          rel="stylesheet">
+
+    <!--    Code Prettyify-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"/>
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="js/corona.js"></script>
+    <script src="js/javascript.js"></script>
+
+    <title>Javascript</title>
+</head>
+
+<body>
+
+<!-- ========================== Header ========================== -->
+
+<!-- Navbar -->
+<header id="header_js" class="header_area">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand">CITS3403 Projecet 1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="html.html"><i
+                                class="fab fa-html5"></i> HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="css.html"><i
+                        class="fab fa-css3-alt"></i> CSS<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-item nav-link active" href="#"><i class="fab fa-js"></i> JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="biography.html"><i class="fas fa-address-book"></i> Biography</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <div class="padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 text-center">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+    <!-- Title and Logo -->
+    <div class="container-fluid home">
+        <div class="row home-text">
+            <div class="col col-7">
+                <h1 class="pageHeader">JavaScript</h1>
+            </div>
+            <div class="col text-center">
+                <i class="fab fa-js header_logo"></i>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+    <img src="assets/white-waves.png" alt="white-waves" id="whitewave" class="img">
+</header>
+
+<!-- ========================== BODY TEXT ========================== -->
+<div class="container-fluid">
+    <!-- History Section -->
+    <div class="row body_row">
+        <h1 class="display-1">History</h1>
+    </div>
+    <div class="row body_row">
+        <p>
+            JavaScript (JS) is a lightweight, interpreted, or just-in-time
+            compiled programming language with first-class functions. Alongside
+            HTML and CSS, JavaScript is one of the core technologies of the World
+            Wide Web. HTML provides the content, CSS provides the styling and
+            JavaScript provides the interaction. Javascript is often referred to
+            as "the" front end programming language for web development.
+            Initially, web pages could only being static. They lacked the ability
+            for dynamic behaviour after the page had been loaded in the browser.
+            In 1955, Netscape decided to add a scripting language to their
+            Browser, Netscape Navigator. There first two attempts where to embed
+            the Java, and Scheme Programming Languages in the browser. Netscape
+            management realised that the best approach would be to make an
+            entirely new scripting language, that was specifically designed for
+            the web. Brendan Eich was employed in May 1995 to help devise this new
+            language. This new language was initially called LiveScript and first
+            released with Netscape Navigator in September 1995. 3 months later
+            LiveScript changed its name to JavaScript. The timeline below notes
+            the important changes to Javascript over the years.
+        </p>
+    </div>
+    <!-- Timeline -->
+    <div class="row body_row">
+        <h1 class="display-2" style="padding-bottom: 1cm">Timeline</h1>
+        <div id="timeline">
+            <div id="line"></div>
+            <div id="date">Date Placeholder</div>
+        </div>
+        <div id="content">
+        </div>
+    </div>
+    <!-- Present Javascript -->
+    <div class="body_row row">
+        <p>
+            This ends the notable changes to javascript of the years. From 2016 to 2019,
+            a new version of the ECMAScript standard was published each year, but the scope
+            of changes was much smaller than the 5th or 6th editions. Probably the biggest change
+            over lifetime was noted in 2005, with the popularity of frameworks. Although JavaScript
+            itself, is not changing very much, Frameworks are. The evolution of these frameworks is
+            pushing forward the language massively. Today, there are too many JavaScript Frameworks
+            to count, and the number is increasing everyday. Currently the most popular frameworks
+            are React, Vue, Angular, Ember, Backbone.js. These frameworks are also evolving at a
+            ridiculous rate. A few years ago it was a running joke amongst JavaScript programmers that
+        </p>
+        <blockquote>
+            <p>
+                "Scientists predict the number of js frameworks may exceed human
+                population by 2020, at that point of time random string generators will be used to name
+                those frameworks."
+            </p>
+        </blockquote>
+    </div>
+</div>
+
+<!-- Applications Section -->
+<div class="container-fluid body-container">
+    <div class="body_row row">
+        <h1 class="display-1">Applications</h1>
+    </div>
+    <div class="body_row row" style="padding-bottom: 0">
+        <p>
+            As mentioned earlier, the implementation of AJAX was a massive step forward for JavaScript.
+            AJAX stands for Asynchronous JavaScript and XML, and is a set of techniques to send and
+            retrieve data asynchronously from a server. This is all done in the background and does not
+            need to modify or refresh the existing web page. The following image from <a
+                href="https://www.w3schools.com/xml/ajax.gif">
+            W3Schools</a> illustrates the process very well.
+        </p>
+        <!-- Ajax diagram -->
+        <img src="assets/ajax.png" alt="ajax diagram" id="ajax_diagram">
+        <p>
+            In this application we are making a request to this <a href="https://corona.lmao.ninja/docs/">Corona Virus
+            API</a>, which holds data on the Corona Virus Globally. Once the data has been retrieved, the web page is
+            updated
+            dynamically using the DOM (Document Object Model) to add in / update elements on the page. When a web page
+            is loaded, the browser creates a Document Object Model of the page. This model can be used to select
+            specific elements and edit them using JavaScript.
+        </p>
+    </div>
+        
+     <!-- Table filer -->
+    <div class="container">
+        <label for="table_filter">Country <span style="font-size: 11pt">(Click Headings to sort)</span></label>
+
+        <input type="text" id="table_filter" placeholder="Search..." class="form-control">
+    </div>
+    <!-- Table -->
+    <div id="table_div" class="container">
+        <div class="col justify-content-center">
+            <table class="table table-bordered" id="table_here">
+                <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th onclick="sortTable(1)">Country</th>
+                    <th onclick="sortTable(2)">Confirmed</th>
+                    <th onclick="sortTable(3)">Active</th>
+                    <th onclick="sortTable(4)">Recovered</th>
+                    <th onclick="sortTable(5)">Deaths</th>
+                    <th onclick="sortTable(6)">Today's Cases</th>
+                    <th onclick="sortTable(7)">Today's Deaths</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <!-- Explanation -->
+    <div class="body_row row" style="padding-top: 1cm">
+        <p>
+            The first thing that needs to be done, in order to make this table
+            is sending a request to the API. This is done using JQuery and its method .get().
+            Once the document is ready, the .get() method (with the json format specified)
+            is called and a XMLHttpRequest is made to the API. On a successful request,
+            the callback function makeTableByCases is called.
+        </p>
+        <pre class="prettyprint linenums exampleCode">// Make AJAX Request on Document ready
+$(document).ready(function () {
+    $.get("https://corona.lmao.ninja/countries", makeTableByCases, "json");
+    ...
+});</pre>
+        <p>
+            The <code>makeTableByCases()</code> function parses the data, formats it and inserts it into the table
+            using the DOM. The comments of the code explain how the function works
+        </p>
+        <pre class="exampleCode prettyprint linenums">// Function to generate table from returned data in JSON format
+// It also generates a list of countries for the graph
+function makeTableByCases(returnedData) {
+    // Sort the data by confirmed cases
+    returnedData.sort(function (a, b) {
+        return b.cases - a.cases;
+    });
+
+    // Construction of table body to be added
+    let content = ""
+
+    // Loops through all of the countries and adds their statistics to
+    // the row
+    content += "&lt;tbody&gt;";
+    for (let i = 0; i &lt; returnedData.length; i++) {
+        content += "&lt;tr&gt;&lt;td&gt;" +
+                    (i + 1) + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].country + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].cases + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].active + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].recovered + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].deaths + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].todayCases + "&lt;/td&gt;&lt;td&gt;" +
+                    returnedData[i].todayDeaths + "&lt;/td&gt;&lt;/tr&gt;"
+    }
+    // Closes table body tag
+    content += "&lt;/tbody&gt;";
+
+    // Adds table body to the existing table element
+    $("#table_here").append(content);
+
+    ...
+}</pre>
+    </div>
+    <div class="body_row row">
+        <p>
+            This Illustrates the use of AJAX and the DOM to manipulate the
+            contents of a page. The graph is implemented in a nearly identical manor. However
+            instead of creating a table, a chart is created using <a href="https://www.chartjs.org/">ChartJS</a>.
+            The explanation of this would be trivial, as the important points are already illustrated
+            above
+        </p>
+    </div>
+    <!-- Graph Filter -->
+    <div class="container">
+        <h1 class="text-center">Cases of Covid-19 Over Last 14 days</h1>
+        <form>
+            <div class="row">
+                <div class="form-group col-sm-5">
+                    <label for="graph_country">Country</label>
+                    <select class="form-control" id="graph_country">
+                    </select>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <!-- Graph -->
+    <div id="chartContainer" class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    <!-- Explanation -->
+    <div class="body_row row" style="padding-bottom: 0.5cm; padding-top: 0.5cm">
+        <p>
+            The code above has illustrated how to generate content when the page loads.
+            It is also possible to dynamically manipulate the content of the page.
+            Examples of this in the page are sorting the table and changing the
+            graph to a specific country. This is done via DOM events. These events can be when a button
+            is pressed, or a the mouse entering or leaving an element. The code for changing the
+            graph is a good example of this concept
+        </p>
+        <pre class="prettyprint exampleCode linenums">// When the document is ready update the graph when the form is changed
+$(document).ready(function () {
+    $("#graph_country").change(function () {
+        var url = "https://corona.lmao.ninja/v2/historical/" +
+            $(this).children("option:selected").val();
+        $.get(url, makeGraph, "json");
+    });
+});</pre>
+    </div>
+    <div class="body_row row">
+        <p>
+            When the field <code>graph_country</code> is updated, it triggers the
+            <code>.change()</code> method. This method takes the value of the form, and
+            constructs a url to the API using the specified country. It then makes an
+            AJAX request. When it returns successful, the makeGraph function is called.
+            The <code>makeGraph()</code> function is the same function used to initially
+            make the graph. Instead using the data for the new graph.
+        </p>
+    </div>
+</div>
+
+<!-- Buffer at bottom -->
+<div id="bottom_buffer"></div>
+</body>
+
 </html>

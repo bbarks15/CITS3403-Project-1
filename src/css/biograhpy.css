@@ -1,0 +1,62 @@
+/* ================= Elements ====================*/
+body {
+    background-image: url("../assets/synth.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 20pt;
+    text-shadow: 1px 1px 10px dodgerblue, 2px 2px 25px purple, 5px 5px 10px darkblue;
+}
+
+/* ====================== Classes =============================*/
+
+
+button.navbar-toggler {
+	box-shadow: 1px 1px 10px dodgerblue, 2px 2px 25px purple, 5px 5px 10px darkblue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: lightslategray;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: ghostwhite;
+}
+
+
+.pageHeader {
+    padding-top: 1cm;
+    color: white;
+    font-size: 6.5vw;
+    text-shadow: 1px 1px 10px dodgerblue, 2px 2px 25px purple, 5px 5px 10px darkblue;
+}
+
+.home {
+    padding-top: 10%;
+    height: 35vw;
+}
+
+/* ======================= ID ===========================*/
+
+#pictureOfMe {
+    width: 80%;
+	height: auto;
+	background-size: 100% 100%;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px dodgerblue, 2px 2px 25px purple, 5px 5px 10px darkblue;
+}
+
+#bio {
+    padding: 1cm;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+}
+
+#cv-Button {
+    background-color: rebeccapurple;
+    box-shadow: 1px 1px 10px dodgerblue, 2px 2px 25px purple, 5px 5px 10px darkblue;
+    font-size: 20pt;
+    color: white;
+}
+

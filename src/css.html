@@ -1,111 +1,444 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      in
-      tegrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      in
-      tegrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <title>CITS3403 Project 1</title>
-  </head>
+<html lang=en>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" id="nav_title">CITS3403 Project 1</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html"
-            ><i class="fab fa-html5"></i> HTML<span class="sr-only"
-              >(current)</span
-            ></a
-          >
-          <a class="nav-item nav-link active" href="#"
-            ><i class="fab fa-css3-alt"></i> CSS</a
-          >
-          <a class="nav-item nav-link" href="javascript.html"
-            ><i class="fab fa-js"></i> Javascript</a
-          >
-          <a class="nav-item nav-link" href="#"
-            ><i class="fas fa-address-book"></i> Biography</a
-          >
-        </div>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <div id="home_css">
-      <div class="text-center">
-        <h1 class="display-4"><i class="fab fa-css3-alt"></i> CSS</h1>
-        <h3>Cascading Style Sheet</h3>
-      </div>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/css.css">
+
+    <!-- Fonts From Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+          rel="stylesheet">
+
+    <!--    Code Prettyify-->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"/>
+
+
+    <title>CSS</title>
+</head>
+
+<body>
+
+<!-- ========================== Header ========================== -->
+
+<!-- Navbar -->
+<header id="header_css" class="header_area">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand">CITS3403 Projecet 1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="html.html"><i class="fab fa-html5"></i> HTML</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-item nav-link active" href="#"><i
+                        class="fab fa-css3-alt"></i> CSS<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="javascript.html"><i class="fab fa-js"></i> JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="biography.html"><i class="fas fa-address-book"></i> Biography</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <div class="padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 text-center">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+    <!-- Title and Logo -->
+    <div class="container-fluid home">
+        <div class="row home-text">
+            <div class="col col-7">
+                <h1 class="pageHeader">CSS</h1>
+                <h3 id="CSS_Logo_Text">Cascading Style Sheet</h3>
+            </div>
+            <div class="col text-center">
+                <i class="fab fa-css3-alt header_logo"></i>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
+    <img src="assets/white-waves.png" alt="white-waves" id="whitewave" class="img">
+</header>
+
+<!-- ========================== BODY TEXT ========================== -->
+
+<!-- History Section -->
+<div class="container-fluid body-container-1st">
+    <div class="row body_row">
+        <h1 class="display-1">History</h1>
+    </div>
+    <div class="row body_row">
+        <p>
+            HTML and CSS (Cascading Style Sheet) often go hand in hand.
+            However, both are very different in the function they provide to
+            constructing pages on the web. HTML is used to generate the
+            content, whilst CSS is used for styling that content. HTML is
+            analogous to the construction of the house, whilst CSS is analogous to
+            the decoration. HTML and CSS did not always co-exist. CSS was
+            invented many years after its counterpart. When HTML was invented
+            in late 1990, there was no way to style a website. In 1994 Marc
+            Andreessen wrote a now-infamous when asked about visual design
+            and styling a website with HTML. In the post he responded with
+        </p>
+        <blockquote>
+            <p>
+                In fact, it has been a constant source of delight for me over
+                the past year to get to continually tell hordes (literally)
+                of people who want to -- strap yourselves in, here it comes
+                -- control what their documents look like in ways that would
+                be trivial in TeX, Microsoft Word, and every other common
+                text processing environment: "Sorry, you're screwed."
+            </p>
+            <footer class="blockquote-footer">Marc Andreessen 1994 <a
+                    href="http://1997.webhistory.org/www.lists/www-talk.1994q1/0648.html">post</a>
+            </footer>
+        </blockquote>
+        <p>
+            Style sheets have existed since the beginnings of SGML (Standard
+            Generalized Markup Language) in the 1980's. However, these
+            implementations did not allow for style sheets to come from
+            different sources on the web. This became a massive turn off for
+            existing style sheets. As HTML grew, it added functionality for
+            styling. This gave web developers more control over the style, but
+            it came at the cost increasing the complexity of HTML. The stark
+            differences in web browser implementations, such as ViolaWWW and
+            WorldWideWeb, made consistent styling difficult. As users had less
+            control over how the content would be displayed in the browser.
+            For example the NeXT browser made by Sir Tim Berners-Lee had style
+            sheets hard coded into the program. Thus, the style sheets could
+            not be linked to documents on the web. This spawned the idea of
+            separating structure and style. Enabling an external style sheet
+            to describe the style of page, allowing for more control and
+            consistency. On October 10, 1994 Hakon Wium Lie, a colleague of Sir Tim
+            Berners-Lee proposed the idea of CSS. CSS or cascading style
+            sheets let a document's style be influenced by multiple style
+            sheets by its ability for style to cascade. Cascade in the context
+            of CSS means that style can inherit and overwrite other styles
+            that have already been defined. Thus, the name CSS.
+        </p>
+    </div>
+    <!-- Benefits and Examples -->
+    <div class="row body_row">
+        <h1 class="display-1">Benefits and Examples</h1>
+    </div>
+    <div class="body_row row">
+        <p>
+            CSS has a large number of attributes that can be styled. Here are
+            some of the most basic as an example of what can be styled. The
+            exact values for the styling can be found using the <i>inspect element</i> tool present in most browsers)
+        </p>
+        <!-- Table for examples -->
+        <table class="table table-bordered" id="CSS_TABLE">
+            <thead>
+            <tr>
+                <td>Attribute</td>
+                <td>Description</td>
+                <td>Example in page</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>margin</code></td>
+                <td>Defines space between element border and parent(left, right, top, bottom)</td>
+                <td>Used to center the sample code blocks</td>
+            </tr>
+            <tr>
+                <td><code>padding</code></td>
+                <td>Defines space between contents and border</td>
+                <td>Spacing between elements</td>
+            </tr>
+            <tr>
+                <td><code>border: size color style</code></td>
+                <td>Defines a border with specified size, color and style</td>
+                <td>The border on the code blocks </td>
+            </tr>
+            <tr>
+                <td><code>color</code></td>
+                <td>Foreground color: color name or hex value</td>
+                <td>The color of text</td>
+            </tr>
+            <tr>
+                <td><code>background color</code></td>
+                <td>Background color: color name or hex value</td>
+                <td>Color of the header</td>
+            </tr>
+            <tr>
+                <td><code>background-image</code></td>
+                <td>Sets image indicated by filename as background image</td>
+                <td>The background of the Biography page</td>
+            </tr>
+            <tr>
+                <td><code>font-family</code></td>
+                <td>Name of the font to be used</td>
+                <td>The website uses the Open Sans font</td>
+            </tr>
+            <tr>
+                <td><code>font-size</code></td>
+                <td>Font size</td>
+                <td>The default font size for the page is 14</td>
+            </tr>
+            <tr>
+                <td><code>width, height</code></td>
+                <td>Specifies the height and width of an element</td>
+                <td>Width of this table</td>
+            </tr>
+            <tr>
+                <td><code>text-align</code></td>
+                <td>Alignment: left, right, center, justify</td>
+                <td>All the paragraphs in the website are justified</td>
+            </tr>
+            <tr>
+                <td><code>display</code></td>
+                <td>How an element is displayed: none, block or inline</td>
+                <td>The block quote above is displayed as a block</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Benefits -->
+    <div class="body_row row">
+        <p>
+            HTML is meant for structure,
+            not anything else. Having the styling outside of HTML helps to
+            keep it concise to its original purpose. Instead of it becoming
+            an amalgamation of what it was intended to be. The benefits of CSS are
+        </p>
+    </div>
+    <!-- List of benefits -->
+    <div class="row body_row">
+        <!-- List -->
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-1-list" data-toggle="list"
+                   href="#list-1" role="tab">Maintainability and Complexity</a>
+                <a class="list-group-item list-group-item-action" id="list-2-list" data-toggle="list"
+                   href="#list-2" role="tab">Consistency</a>
+                <a class="list-group-item list-group-item-action" id="list-3-list" data-toggle="list"
+                   href="#list-3" role="tab">Bandwidth Reduction</a>
+                <a class="list-group-item list-group-item-action" id="list-4-list" data-toggle="list"
+                   href="#list-4" role="tab">Cascading</a>
+                <a class="list-group-item list-group-item-action" id="list-5-list" data-toggle="list"
+                   href="#list-5" role="tab">Control</a>
+                <a class="list-group-item list-group-item-action" id="list-6-list" data-toggle="list"
+                   href="#list-6" role="tab">More Control</a>
+                <a class="list-group-item list-group-item-action" id="list-7-list" data-toggle="list"
+                   href="#list-7" role="tab">Even More Control</a>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <!-- Maintainability and Complexity -->
+                <div class="tab-pane fade show active" id="list-1" role="tabpanel">
+                    <p>
+                        Keeping the style and structure separate, improves readability and makes it easier to
+                        make changes.
+                    </p>
+                    <p>
+                        Modularising of the style reduces the complexity. This makes it easier to edit
+                        and update. Instead of having to search through a large document with both style and content.
+                        You only need to go to the one you want to change
+                    </p>
+                </div>
+                <!-- Consistency -->
+                <div class="tab-pane fade" id="list-2" role="tabpanel">
+                    <p>
+                        CSS allows for single style sheet to style multiple documents. This document has a general style
+                        sheet, that applies to all the pages and individual style sheets that apply to a specific page.
+                    </p>
+                    <p>
+                        An example of global styling is shown with the body tag.
+                    </p>
+                    <pre class="prettyprint exampleCode linenums">body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14pt;
+    ...
+}</pre>
+                    <p>
+                        This styling makes the font family and font size the same throughout all the documents. In the
+                        individual
+                        style sheets colors can be specified. For example the list to the left has the color Blue for
+                        active elements.
+                        This only applies to css page, as other pages have different colors specified in their style
+                        sheets.
+                    </p>
+                    <pre class="prettyprint exampleCode linenums">.list-group-item.active {
+    color: #212529;
+    background-color: #3399FF;
+    border-color: #3399FF;
+}</pre>
+                    <p>
+                    </p>
+
+
+                </div>
+                <!-- Bandwidth Reduction -->
+                <div class="tab-pane fade" id="list-3" role="tabpanel">
+                    <p>
+                        This is more a of niche benefit, but separating the style from the HTML document
+                        largely reduces the file transfer size.
+                    </p>
+                    <p>
+                        The external style sheet will only be accessed when someone requests the website.
+                        The style sheet is cached and only needs to be accessed once. Improving performance.
+                    </p>
+                </div>
+                <!-- Cascading -->
+                <div class="tab-pane fade" id="list-4" role="tabpanel">
+                    <p>
+                        The cascading in CSS is a very important feature.
+                        Cascading in CSS is the ability for conflicting 
+                        styles to be prioritized, and for properties to
+                        be inherited from their parents.
+                    </p>
+                    <p>
+                        The general priority of properties are
+                    </p>
+                    <ol>
+                        <li>Inline style (inside HTML element)</li>
+                        <li>External and internal stylesheets</li>
+                        <li>Browser defaults</li>
+                    </ol>
+                    <p>
+                        The order properties are defined is also very
+                        important. So for example linking one style sheet
+                        below another sheet, gives the sheet below higher
+                        priority. Linking the user written style sheet 
+                        after the bootstrap style sheet allows the user to
+                        override, and customise the bootstrap styles.
+                    </p>
+                </div>
+                <!-- Control -->
+                <div class="tab-pane fade" id="list-5" role="tabpanel">
+                    <p>
+                        CSS uses selectors to specify what element is to be styled. The main three selectors are by
+                        class, id or element. The styling for the body tag is an example of element styling. This
+                        styling will apply to all body elements.
+                    </p>
+                    <p>
+                        Classes can be defined by the developer. Essentially creating your own grouping of elements
+                        to have a specific styling. Classes are denoted by a "." before the name of the class in CSS.
+                        Here is an example
+                    </p>
+                    <pre class="prettyprint linenums exampleCode">.exampleCode {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    width: 70%;
+}</pre>
+                    <p>
+                        The exampleCode class gives all elements with the class exampleCode the following styling.
+                        Lastly is
+                        id. An id is like a class, but it only applies to one element. In CSS an id is denoted by the
+                        "#" symbol
+                    </p>
+                    <pre class="exampleCode linenums prettyprint">#CSS_Logo_Text {
+    font-size: 32pt;
+}</pre>
+                    <p>This only applies to the element with the CSS_Logo_Text id</p>
+                </div>
+                <!-- More Control -->
+                <div class="tab-pane fade" id="list-6" role="tabpanel">
+                    <p>
+                        The selectors defined in the previous section 
+                        can be combined with "operators" to give even
+                        more control of the styling of elements
+                    </p>
+                    <h4>Descendent selector</h4>
+                    <pre class="prettyprint linenums exampleCode">a b {
+    ...
+}</pre>
+                    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+                    <h4>Child selector (a &gt; b)</h4>
+                    <pre class="prettyprint linenums exampleCode">a > b {
+    ...
+}</pre>
+                    <p>The child selector selects all elements that are the children of a specified element.</p>
+                    <h4>Adjacent sibling selector (a + b)</h4>
+                    <pre class="prettyprint linenums exampleCode">a + b {
+    ...
+}</pre>
+                    <p>The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.</p>
+                    <h4>General sibling selector (a ~ b)</h4>
+                    <pre class="prettyprint linenums exampleCode">a + b {
+    ...
+}</pre>
+                    <p>The general sibling selector selects all elements that
+                    are siblings of a specified element. These operators can be
+                    combined together for example</p>
+                    <pre class="prettyprint linenums exampleCode">.prettyprint ol.linenums > li {
+    list-style-type: decimal;
+}</pre>
+                    <p>This only applies to <code>&lt;li&gt;</code> elements that are children of elements with the <code>prettyprint</code> class and <code>ol.linenums</code>
+                    , <code>&lt;ol&gt;</code> elements with the linenums classes.</p>
+                    
+                </div>
+                <!-- Even More Control -->
+                <div class="tab-pane fade" id="list-7" role="tabpanel">
+                    <p>
+                        CSS also has pseudo classes. A pseudo class is  
+                        used to define the state of an element
+                    </p>
+                    <pre class="prettyprint linenums
+                    exampleCode">selector:pseudo-class {
+    ...
+}</pre>
+                <p>Here are some of the pseudo-classes to give an 
+                    idea of what is possible
+                </p>
+                <ul>
+                    <li>:active</li>
+                    <li>::after and ::before</li>
+                    <li>:hover</li>
+                    <li>:first-child</li>
+                    <li>:nth-child</li>
+                </ul>
+                <p>For example, in the timeline on the HTML page. The timeline
+                uses the <code>:nth-child()</code> pseudo class to specify
+                different colors for the nth recurring icon on the timeline.
+                Below is the code
+                </p>
+                <pre class="prettyprint linenums exampleCode">.main-timeline .timeline:nth-child(2n) .timeline-icon {
+    border-color: #7eda99
+}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Buffer at Bottom -->
+<div id="bottom_buffer"></div>
+</body>
+
 </html>
